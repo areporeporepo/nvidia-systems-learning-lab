@@ -1,4 +1,4 @@
-# NVIDIA Systems Learning Lab
+# NVIDIA Stack Learning Lab
 
 Educational notes, labs, and a small conceptual simulator for learning how NVIDIA AI systems fit together across `CUDA`, `NVLink`, `NVSwitch`, `NCCL`, `NVSHMEM`, `Blackwell`, `Rubin`, `Vera`, and the public `Feynman` roadmap.
 
