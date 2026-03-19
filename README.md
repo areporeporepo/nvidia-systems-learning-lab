@@ -1,0 +1,70 @@
+# NVIDIA Systems Learning Lab
+
+Educational notes, labs, and a small conceptual simulator for learning how NVIDIA AI systems fit together across `CUDA`, `NVLink`, `NVSwitch`, `NCCL`, `NVSHMEM`, `Blackwell`, `Rubin`, `Vera`, and the public `Feynman` roadmap.
+
+This repo is for learning system architecture, not for reverse engineering unreleased hardware. Where NVIDIA has only published roadmap-level information, this repo says so directly.
+
+## What This Repo Covers
+
+- How the modern NVIDIA stack fits together from chips to collectives
+- The difference between compute, scale-up fabric, and scale-out networking
+- Public roadmap context for `Blackwell`, `Rubin`, `Vera`, and `Feynman`
+- Hands-on labs using public repos such as `cuda-samples` and `nccl-tests`
+- A small Python fabric simulator for intuition about topology, bandwidth bottlenecks, and hop count
+
+## What This Repo Does Not Do
+
+- Emulate `Blackwell`, `Rubin`, or `Feynman` at ISA or microarchitecture fidelity
+- Reproduce exact private topologies or unpublished interconnect behavior
+- Replace official NVIDIA documentation
+
+## Learning Path
+
+1. Read [docs/how-the-stack-fits.md](docs/how-the-stack-fits.md).
+2. Read [docs/roadmap.md](docs/roadmap.md).
+3. Run the simulator:
+
+```bash
+python3 -m sim.fabric_sim --preset dual_gpu_nvlink --size-gb 16
+python3 -m sim.fabric_sim --preset nvswitch_box --source GPU0 --target GPU7 --size-gb 32
+```
+
+4. Work through [labs/first-week.md](labs/first-week.md).
+5. Use [labs/contribute.md](labs/contribute.md) to start contributing upstream.
+
+## Repo Layout
+
+- `docs/`: architecture notes and roadmap comparisons
+- `labs/`: guided hands-on exercises and contribution ideas
+- `sim/`: conceptual topology simulator
+- `tests/`: simulator tests
+
+## Quick Start
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -U pip pytest ruff
+ruff check .
+pytest
+python3 -m sim.fabric_sim --preset workstation_pcie
+```
+
+## Suggested Companion Repos
+
+- `NVIDIA/cuda-samples`: https://github.com/NVIDIA/cuda-samples
+- `NVIDIA/nccl-tests`: https://github.com/NVIDIA/nccl-tests
+- `NVIDIA/nccl`: https://github.com/NVIDIA/nccl
+- `NVIDIA/nvshmem`: https://github.com/NVIDIA/nvshmem
+
+## Primary Sources
+
+- NVIDIA Blackwell architecture: https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/
+- NVIDIA HGX / Rubin overview: https://www.nvidia.com/en-us/data-center/hgx/
+- NVIDIA Multi-Node NVLink Systems docs: https://docs.nvidia.com/multi-node-nvlink-systems/index.html
+- NVIDIA NVLink overview: https://www.nvidia.com/en-us/data-center/nvlink/
+- NVIDIA 2025 investor roadmap deck: https://investor.nvidia.com/files/doc_presentations/2025/10/NVIDIA-2025-NDR-Deck-1.pdf
+
+## Design Principle
+
+Use public facts for the roadmap, use current public software for hands-on learning, and use simple simulation only for intuition.

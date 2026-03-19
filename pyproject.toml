@@ -1,0 +1,12 @@
+[project]
+name = "nvidia-systems-learning-lab"
+version = "0.1.0"
+description = "Educational repo for learning NVIDIA systems architecture and topology concepts"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
