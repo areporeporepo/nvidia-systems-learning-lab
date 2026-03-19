@@ -1,24 +1,8 @@
-# 2026 Event Tracker
+# 2026 Future Event Tracker
 
-As of **March 19, 2026**, these are the main public events worth tracking for NVIDIA systems, AI factories, interconnects, data center architecture, and adjacent HPC infrastructure.
+As of **March 19, 2026**, these are the main **upcoming** public events worth tracking for NVIDIA systems, AI factories, interconnects, data center architecture, and adjacent HPC infrastructure.
 
-## Already Happened
-
-### NVIDIA GTC 2026
-
-- **March 16-19, 2026**
-- San Jose, California
-- Why it matters: this is the main anchor event for this repo's `2026 -> 2028` timeline.
-- Official site: https://www.nvidia.com/gtc/
-
-### Mobile World Congress 2026
-
-- **March 2-5, 2026**
-- Barcelona, Spain
-- Why it matters: telecom, AI-RAN, sovereign AI infrastructure, network edge.
-- NVIDIA event page: https://www.nvidia.com/en-us/events/mobile-world-congress/
-
-## Coming Up
+This page is future-only. `GTC 2026` is still the baseline source for current roadmap interpretation, but it is not listed here because it has already happened.
 
 ### COMPUTEX 2026
 
@@ -39,6 +23,7 @@ As of **March 19, 2026**, these are the main public events worth tracking for NV
 - **July 19-23, 2026**
 - Los Angeles Convention Center, Los Angeles, California
 - Why it matters: graphics, simulation, digital twins, rendering, and NVIDIA platform storytelling around visual computing and Omniverse-adjacent work.
+- Jensen watch: NVIDIA announced Jensen Huang as a keynote speaker for SIGGRAPH 2026.
 - Official site: https://s2026.siggraph.org/
 
 ### Hot Chips 2026
@@ -73,7 +58,7 @@ If your focus is `Blackwell -> Rubin -> Vera -> Feynman`, the most important eve
 5. `OCP Global Summit`
 6. `SC`
 
-## Stanford And Jensen Watchlist
+## Stanford And Jensen Future Watchlist
 
 ### Stanford-Adjacent
 
@@ -92,25 +77,17 @@ If your focus is `Blackwell -> Rubin -> Vera -> Feynman`, the most important eve
 
 ### Jensen Huang Public Speaking Anchors
 
-#### NVIDIA at CES 2026
+#### SIGGRAPH 2026
 
-- **January 5, 2026**
-- Las Vegas, Nevada
-- Jensen gave the `NVIDIA Live at CES 2026` presentation.
-- Official site: https://www.nvidia.com/en-us/events/ces/
+- **July 19-23, 2026**
+- Los Angeles Convention Center, Los Angeles, California
+- Jensen Huang is listed as a keynote speaker.
+- Official site: https://s2026.siggraph.org/
 
-#### NVIDIA GTC 2026 Keynote
+#### Stanford GSB: View From The Top With Jensen Huang
 
-- **March 16, 2026**
-- SAP Center, San Jose, California
-- This is the main Jensen anchor event for the repo.
-- Official site: https://www.nvidia.com/en-us/gtc/keynote/
-
-#### Jensen Huang Open Models Panel at GTC 2026
-
-- **March 18, 2026, 12:30-2 p.m. PT**
-- Civic Center, San Jose, California
-- Official source: https://www.nvidia.com/gtc/
+- Watchlist only until Stanford posts a future dated page.
+- Event page: https://www.gsb.stanford.edu/events/view-top-jensen-huang
 
 ## Tracking Rule For Jensen Events
 
@@ -118,7 +95,7 @@ Use three categories:
 
 - `confirmed`: official NVIDIA, Stanford, or conference event page with date and venue
 - `watchlist`: credible public event page exists but date or role is not yet confirmed
-- `historical anchor`: already happened, but important for the repo's timeline
+- `baseline only`: useful source context, but not part of the future event list
 
 ## Update Rule
 
