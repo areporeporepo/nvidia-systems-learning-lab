@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from automation.future_event_updater import (
+from automation.future_event_updater import (  # noqa: E402
     DEFAULT_MAX_SOURCE_CHARS,
     DEFAULT_NIM_BASE_URL,
     DEFAULT_NIM_MODEL,
