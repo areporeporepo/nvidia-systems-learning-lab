@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from forecast.capacity_model import OBSERVED_METRICS, project_all_scenarios
+from forecast.capacity_model import OBSERVED_METRICS, project_all_scenarios  # noqa: E402
 
 DATA_DIR = ROOT / "data"
 ASSETS_DIR = ROOT / "docs" / "assets"
